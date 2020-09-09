@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios'
+import GitCard from './GitCard'
 
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      userData = {},
-      followers = []
+      userData: {},
+      followers: []
     };
   }
 
@@ -37,7 +38,7 @@ class App extends React.Component {
       return (
       <div className="App">
         <header className="App-header">
-          
+          <GitCard data={this.state.userData} followers={this.state.followers}/>
         </header>
       </div>
     );
