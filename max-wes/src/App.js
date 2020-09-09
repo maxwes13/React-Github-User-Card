@@ -27,7 +27,7 @@ class App extends React.Component {
     axios.get("https://api.github.com/users/maxwes13/followers")
     .then(response => {
       this.setState({followers: response.data});
-      console.log(this.state.userData);
+      console.log('app.js 30', response);
     })
     .catch(err => {
       console.log('error', err)
