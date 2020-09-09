@@ -106,7 +106,7 @@ function GitCard (props) {
           <Typography variant="body2">
           {props.followers.map(follow => {
                 return (
-                    <p key={Date.now()}>{follow.login}</p>
+                    <p key={follow.id}>{follow.login}</p>
                 )
             })}
           </Typography>
